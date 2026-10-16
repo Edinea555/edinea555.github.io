@@ -1,0 +1,12 @@
+{
+  "name": "qa-automation-lab",
+  "private": true,
+  "scripts": {
+    "test:cypress": "cypress run --spec cypress/posts.cy.js",
+    "test:playwright": "playwright test e2e-playwright/posts.spec.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.0",
+    "cypress": "^15.0.0"
+  }
+}
