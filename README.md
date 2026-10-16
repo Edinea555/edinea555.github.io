@@ -1,58 +1,23 @@
-🧑‍💻 Bio
+# Portfólio de QA — Edinea Conceição
 
-Sou Analista de Qualidade de Software com mais de 4 anos de experiência em testes manuais e automatizados, com forte atuação em ambientes ágeis e projetos internacionais. Tenho vivência com ferramentas como Cypress, Robot Framework, Playwright, Postman, Azure DevOps e AWS, além de linguagens como Python e JavaScript.
+Site estático responsivo em HTML, CSS e JavaScript, sem necessidade de build.
 
-Trabalho com foco em excelência, usabilidade e melhoria contínua, ajudando times a entregar produtos mais confiáveis, seguros e com alto valor agregado. Acredito que qualidade é uma responsabilidade compartilhada — por isso, atuo de forma colaborativa com desenvolvedores, POs e stakeholders, promovendo a cultura de qualidade desde o início do ciclo de desenvolvimento.
+## Personalização antes da publicação
 
-Sou certificada CTFL e Certified Scrum Professional, e estou sempre em busca de evolução técnica e estratégica. Vamos nos conectar?
+1. Abra `script.js` e preencha `CONTACT.email`, `CONTACT.linkedin` e `CONTACT.github`. Os botões ficam desativados até receberem links reais.
+2. Revise as descrições de experiências e confirme datas, empresas, cargos e tecnologias com seu currículo atualizado.
+3. Opcionalmente, inclua projetos públicos reais com links para repositórios, demonstrações e evidências sem dados confidenciais.
 
-DevOps e Gestão de Projetos: Azure DevOps, Jira.​
+## Executar localmente
 
-Minha trajetória profissional é marcada pela atuação em ambientes ágeis, onde contribuí para a garantia da qualidade de sistemas e aplicações, assegurando que os produtos atendam aos mais altos padrões de desempenho e confiabilidade. Tenho experiência na criação e execução de casos de teste, identificação e documentação de defeitos, além de colaborar estreitamente com equipes de desenvolvimento para a resolução eficiente de problemas.
+Abra `index.html` no navegador, ou use a extensão Live Server do VS Code.
 
-🧰 Habilidades técnicas
-Liste e se possível mostre projetos com:
+## Publicar no GitHub Pages
 
-Ferramentas: Cypress, Playwright, Postman, Robot Framework
+Crie um repositório, envie os três arquivos (`index.html`, `styles.css`, `script.js`) para a raiz da branch principal e ative Settings → Pages → Deploy from a branch.
 
-Linguagens: JavaScript, Python
+## Publicar no Netlify
 
-Metodologias: BDD, TDD, Agile, DevOps
+Arraste a pasta `portfolio-qa` para o Netlify Drop. Nenhuma configuração de build é necessária.
 
-Integrações: CI/CD, Jenkins, Azure DevOps, AWS
-
-📁 Projetos práticos 
-
-Aqui estão os meus repositórios com os projetos de testes:
-
-- [Testes com Cypress](https://github.com/edinea/cypress-tests)
-- [Testes com Robot Framework](https://github.com/edinea/robot-tests)
-- [Testes com Rest Assured](https://github.com/edinea/rest-assured-tests)
-
-Breve descrição: objetivo, escopo dos testes
-
-Stack usada: ex: Cypress + JavaScript + Jenkins
-
-Desafios enfrentados e como você resolveu
-
-Prints dos testes ou relatório do Allure/TestRail, por exemplo
-
-Ideias de projetos:
-
-Testes de uma API REST pública (ex: reqres.in)
-
-Automatização de testes end-to-end em uma aplicação demo (ex: saucedemo.com)
-
-Integração de testes com CI/CD (ex: GitHub Actions)
-
-Testes de performance com JMeter ou k6
-
-📝 Blog ou artigos (opcional)
-Escreva sobre aprendizados, dicas de ferramentas, comparações (ex: Cypress vs Playwright), etc.
-
-Pode usar Medium, Dev.to ou o próprio GitHub Pages
-
-📫 Contato
-LinkedIn, GitHub, e-mail
-
-Link para seu currículo
+Fontes do Google Fonts requerem conexão; o site possui fontes alternativas locais.

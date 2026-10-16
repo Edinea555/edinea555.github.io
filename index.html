@@ -1,61 +1,36 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Edinea Conceição - Analista de QA Pleno">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>Portfólio - Edinea Conceição</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfólio de Edinea Conceição, Analista de Qualidade de Software. Testes automatizados, APIs, CI/CD e estratégia de QA." />
+  <meta name="theme-color" content="#0b1220" />
+  <title>Edinea Conceição | Quality Assurance Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-
-    <header>
-        <div class="container">
-            <h1 class="headline">Olá, sou Edinea Conceição</h1>
-            <p class="subheadline">Analista de Qualidade de Software | Especialista em Testes Automatizados</p>
-            <div class="button-container">
-                <a href="#sobre" class="button">Saiba mais sobre mim</a>
-                <a href="#contato" class="button">Entre em contato</a>
-            </div>
-        </div>
-    </header>
-
-    <section id="sobre" class="about">
-        <div class="container">
-            <h2>Sobre mim</h2>
-            <p>
-                Sou analista de qualidade de software com experiência em automação de testes e metodologias ágeis. 
-                Com passagens por diversos projetos internacionais, tenho expertise em ferramentas como Cypress, Robot Framework, Rest-Assured, e muito mais.
-            </p>
-        </div>
+  <a class="skip" href="#conteudo">Ir para o conteúdo</a>
+  <header class="header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio"><span class="brand-mark">EC<span class="dot">.</span></span><span class="brand-label">QUALITY ENGINEERING</span></a>
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+      <div class="nav-links" id="menu"><a href="#sobre">Sobre</a><a href="#competencias">Competências</a><a href="#experiencia">Experiência</a><a href="#projetos">Projetos</a><a href="#formacao">Formação</a><a class="nav-contact" href="#contato">Contato ↗</a></div>
+    </nav>
+  </header>
+  <main id="conteudo">
+    <section class="hero container" id="inicio">
+      <div class="hero-copy reveal"><div class="eyebrow"><span class="status-dot"></span> QUALIDADE QUE IMPULSIONA PRODUTOS</div><p class="hero-kicker">Olá, eu sou</p><h1>Edinea<br><span>Conceição<span class="period">.</span></span></h1><p class="role">Quality Assurance Analyst <span class="slash">/</span> Software Quality Engineer</p><p class="hero-desc">Transformo requisitos em confiança, testes em prevenção e qualidade em valor para o negócio. Experiência em testes manuais, automação, APIs e entrega contínua.</p><div class="actions"><a class="btn btn-primary" href="#projetos">Explorar projetos <span>↗</span></a><a class="btn btn-secondary" href="#contato">Entrar em contato <span>↗</span></a></div><div class="hero-meta"><span>📍 Salvador, Bahia · Brasil</span><span>● Disponível para conexões profissionais</span></div></div>
+      <div class="hero-visual reveal" aria-label="Painel ilustrativo de testes de software"><div class="visual-top"><span><i></i><i></i><i></i></span><small>quality-suite / overview</small><span class="code-icon">⌘</span></div><div class="visual-body"><div class="code-line muted">// Building confidence through quality</div><div class="code-line"><span class="pink">describe</span>(<span class="green">'Quality Engineering'</span>, () =&gt; {</div><div class="code-line indent"><span class="pink">it</span>(<span class="green">'delivers value'</span>, () =&gt; {</div><div class="code-line indent2"><span class="purple">expect</span>(product).<span class="cyan">toBeReliable</span>();</div><div class="code-line indent">});</div><div class="code-line">});</div><div class="test-panel"><div class="test-title"><span>◉ TEST EXECUTION</span><span class="pass">● PASSED</span></div><div class="test-row"><span>✓ Fluxos críticos</span><span>OK</span></div><div class="test-row"><span>✓ Contratos de API</span><span>OK</span></div><div class="test-row"><span>✓ Regressão automatizada</span><span>OK</span></div><div class="test-row"><span>✓ Integração contínua</span><span>OK</span></div></div></div></div>
     </section>
-
-    <section id="habilidades" class="skills">
-        <div class="container">
-            <h2>Minhas Habilidades</h2>
-            <ul>
-                <li>Cypress</li>
-                <li>Robot Framework</li>
-                <li>Testes Automatizados</li>
-                <li>Jira, Azure DevOps</li>
-                <li>JavaScript, Python</li>
-                <li>Metodologias Ágeis</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contato" class="contact">
-        <div class="container">
-            <h2>Entre em contato</h2>
-            <p>Email: <a href="mailto:edinea@exemplo.com">edinea@exemplo.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/edinea-conceição" target="_blank">linkedin.com/in/edinea-conceição</a></p>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Edinea Conceição - Todos os direitos reservados.</p>
-    </footer>
-
+    <section class="metrics container reveal" aria-label="Destaques profissionais"><div><strong>~7<span>+</span></strong><p>Anos de experiência</p></div><div><strong>CTFL</strong><p>Certificação ISTQB</p></div><div><strong>E2E</strong><p>Automação de testes</p></div><div><strong>CI/CD</strong><p>Qualidade contínua</p></div></section>
+    <section class="section section-alt" id="sobre"><div class="container about-grid"><div class="section-heading reveal"><span class="section-index">01 / SOBRE MIM</span><h2>Qualidade não é uma etapa.<br><em>É uma cultura.</em></h2></div><div class="about-copy reveal"><p>Sou Analista de Qualidade de Software com aproximadamente sete anos de experiência em testes manuais e automatizados, atuando em projetos corporativos de diferentes segmentos.</p><p>Minha atuação envolve estratégia e execução de testes, validação de APIs REST, automação end-to-end, testes exploratórios, regressão, investigação de defeitos e colaboração com equipes multidisciplinares em ambientes ágeis.</p><p>Acredito em uma abordagem orientada a riscos, na complementaridade entre testes manuais e automatizados e no uso consciente de IA generativa para apoiar a engenharia de qualidade.</p><div class="pill-row"><span>Visão de negócio</span><span>Prevenção de defeitos</span><span>Melhoria contínua</span></div></div></div></section>
+    <section class="section container" id="competencias"><div class="section-heading reveal"><span class="section-index">02 / TECH STACK</span><h2>Ferramentas &amp; <em>competências.</em></h2><p>Uma combinação de técnica, análise crítica e foco na experiência do usuário.</p></div><div class="skills-grid"><article class="skill-card reveal"><div class="skill-icon">⌘</div><h3>Automação de testes</h3><p>Estruturação, execução e manutenção de cenários automatizados.</p><div class="tags"><span>Playwright</span><span>Cypress</span><span>Robot Framework</span><span>Selenium</span><span>Cucumber</span></div></article><article class="skill-card reveal"><div class="skill-icon">{ }</div><h3>APIs &amp; backend</h3><p>Validação de contratos, integrações, respostas e regras de negócio.</p><div class="tags"><span>Postman</span><span>Insomnia</span><span>REST</span><span>Swagger/OpenAPI</span><span>SQL</span></div></article><article class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>Linguagens &amp; ambiente</h3><p>Conhecimentos técnicos para investigar e automatizar com autonomia.</p><div class="tags"><span>JavaScript</span><span>TypeScript</span><span>Python</span><span>Java</span><span>Docker</span></div></article><article class="skill-card reveal"><div class="skill-icon">↗</div><h3>DevOps &amp; gestão</h3><p>Integração de qualidade ao fluxo de desenvolvimento e entrega.</p><div class="tags"><span>Azure DevOps</span><span>Jenkins</span><span>Jira</span><span>CI/CD</span><span>Agile</span></div></article></div></section>
+    <section class="section section-alt" id="experiencia"><div class="container"><div class="section-heading reveal"><span class="section-index">03 / TRAJETÓRIA</span><h2>Experiência <em>profissional.</em></h2></div><div class="timeline"><article class="timeline-item reveal"><div class="timeline-date">2025 — ATUAL</div><div><span class="job-type">QUALIDADE DE SOFTWARE</span><h3>ACT Digital</h3><p class="job-role">Analista de Testes</p><p>Atuação em projetos corporativos com validação funcional, automação, análise de defeitos e colaboração com equipes de desenvolvimento em ambientes ágeis.</p></div></article><article class="timeline-item reveal"><div class="timeline-date">ATÉ 2026</div><div><span class="job-type">SETOR PÚBLICO / TECNOLOGIA</span><h3>Montreal Informática</h3><p class="job-role">Analista de Testes · Projeto ConectaServidor</p><p>Validação de fluxos administrativos, formulários, permissões, anexos, regras de negócio e integrações de sistemas.</p></div></article><article class="timeline-item reveal"><div class="timeline-date">2025</div><div><span class="job-type">TECNOLOGIA INDUSTRIAL</span><h3>Radix</h3><p class="job-role">Analista de Testes · Projetos industriais</p><p>Planejamento e execução de testes funcionais, análise de requisitos e acompanhamento de defeitos em soluções corporativas.</p></div></article></div></div></section>
+    <section class="section container" id="projetos"><div class="section-heading reveal"><span class="section-index">04 / ÁREAS DE ATUAÇÃO</span><h2>Projetos &amp; <em>práticas de QA.</em></h2><p>Exemplos de frentes de atuação profissional. Os detalhes internos de clientes e sistemas são preservados.</p></div><div class="project-grid"><article class="project-card reveal"><div class="project-top"><span>01 / AUTOMATION</span><span>↗</span></div><div class="project-graphic"><div class="graphic-lines"><span></span><span></span><span></span></div><strong>test.describe( )</strong><small>✓ end-to-end tests</small></div><h3>Automação de testes E2E</h3><p>Estratégias de automação para fluxos críticos, regressão e validação contínua de funcionalidades.</p><div class="tags"><span>Cypress</span><span>Playwright</span><span>JavaScript</span></div></article><article class="project-card reveal"><div class="project-top"><span>02 / API TESTING</span><span>↗</span></div><div class="project-graphic api-graphic"><span class="http-badge">200 OK</span><strong>GET /api/quality</strong><small>{ "status": "validated" }</small></div><h3>Qualidade de APIs REST</h3><p>Verificação de contratos, status HTTP, autenticação, cenários negativos e integridade das respostas.</p><div class="tags"><span>Postman</span><span>REST</span><span>SQL</span></div></article><article class="project-card reveal"><div class="project-top"><span>03 / DELIVERY</span><span>↗</span></div><div class="project-graphic pipeline-graphic"><div class="pipeline"><span>BUILD</span><b>→</b><span>TEST</span><b>→</b><span>DEPLOY</span></div><small>● continuous quality</small></div><h3>Qualidade integrada ao CI/CD</h3><p>Execução e acompanhamento de testes em pipelines, investigação de falhas e apoio à confiabilidade das entregas.</p><div class="tags"><span>Azure DevOps</span><span>Jenkins</span><span>CI/CD</span></div></article><article class="project-card reveal"><div class="project-top"><span>04 / INNOVATION</span><span>↗</span></div><div class="project-graphic ai-graphic"><div class="ai-orb">✳</div><small>AI + QUALITY ENGINEERING</small></div><h3>IA generativa aplicada ao QA</h3><p>Uso de IA como apoio à elaboração de cenários, investigação, documentação e melhoria dos processos de teste.</p><div class="tags"><span>IA Generativa</span><span>Test Design</span><span>Inovação</span></div></article></div><p class="project-note">* As ilustrações e exemplos de código são demonstrativos; não representam dados reais de clientes ou métricas de execução.</p></section>
+    <section class="section section-alt" id="formacao"><div class="container education-grid"><div class="section-heading reveal"><span class="section-index">05 / EVOLUÇÃO CONTÍNUA</span><h2>Formação &amp; <em>certificação.</em></h2><p>Aprendizado contínuo como parte da construção de software confiável.</p></div><div class="education-list reveal"><article><span>01</span><div><h3>Pós-graduação em Engenharia de Software</h3><p>Em andamento · 2026</p></div></article><article><span>02</span><div><h3>ISTQB Certified Tester Foundation Level</h3><p>Certificação CTFL</p></div></article></div></div></section>
+    <section class="section contact-section" id="contato"><div class="container contact-content reveal"><span class="section-index">06 / VAMOS CONVERSAR</span><h2>Vamos construir<br><em>qualidade juntos?</em></h2><p>Aberta a conexões profissionais, troca de conhecimento e oportunidades em engenharia de qualidade.</p><div class="actions"><a class="btn btn-primary" id="email-link" href="mailto:SEU_EMAIL@exemplo.com">Enviar e-mail ↗</a><a class="btn btn-secondary" id="linkedin-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a class="btn btn-secondary" id="github-link" href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div><p class="contact-note">Antes de publicar, personalize os links de contato no arquivo <code>script.js</code>.</p></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#inicio">EC<span class="dot">.</span></a><span>© <span id="year">2026</span> Edinea Conceição. Desenvolvido com foco em qualidade.</span><a href="#inicio">Voltar ao topo ↑</a></div></footer>
 </body>
 </html>
