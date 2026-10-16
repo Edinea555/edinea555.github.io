@@ -1,8 +1,8 @@
 // PERSONALIZE ANTES DE PUBLICAR:
 const CONTACT = {
-  email: '', // Ex.: 'contato@seudominio.com'
-  linkedin: '', // Ex.: 'https://www.linkedin.com/in/seu-perfil/'
-  github: '' // Ex.: 'https://github.com/seu-usuario'
+  email: '', // Ex.: 'edinea555@gmail.com'
+  linkedin: '', // Ex.: 'https://www.linkedin.com/in/edineaconceicao/'
+  github: '' // Ex.: 'https://github.com/Edinea555/edinea555.github.io/'
 };
 
 const menuButton = document.querySelector('.menu-toggle');
