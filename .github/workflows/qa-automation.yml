@@ -1,0 +1,68 @@
+
+name: QA Automation Lab
+
+on:
+  push:
+    branches: [main, feature/qa-automation-lab]
+  pull_request:
+    branches: [main]
+
+jobs:
+  cypress:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: qa-automation-lab
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: qa-automation-lab/package-lock.json
+      - run: npm ci
+      - run: npm run test:cypress
+
+  playwright:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: qa-automation-lab
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: qa-automation-lab/package-lock.json
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:playwright
+
+  robot:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: qa-automation-lab
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install robotframework==7.0 robotframework-requests==0.9.7
+      - run: python -m robot robot/posts.robot
+
+  rest-assured:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: qa-automation-lab/rest-assured
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+          cache-dependency-path: qa-automation-lab/rest-assured/pom.xml
+      - run: mvn --batch-mode clean test
