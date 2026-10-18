@@ -3,3 +3,11 @@ cypress/videos/
 cypress/screenshots/
 playwright-report/
 test-results/
+
+# Robot Framework
+**/output.xml
+**/log.html
+**/report.html
+
+# Maven / REST Assured
+**/target/
